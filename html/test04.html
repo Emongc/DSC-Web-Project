@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>XHTML 학습예제</title>
+    <style>
+        body {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            /* 가로 가운데 */
+            align-items: center;
+            min-height: 100vh;
+            /* 세로 가운데 */
+
+        }
+
+        .description {
+            margin-bottom: 50px;
+        }
+    </style>
+</head>
+
+<body>
+
+    <h1 style="color:rgb(47, 114, 66);">XHTML 예제 페이지</h1>
+    <p class="description" style="color:rgb(129, 130, 129);">이것은 XHTML 문서의 예제입니다.</p>
+
+    <div>
+        <img src="/img/emong1.png" alt="빨간 비니 쓴 에몽" title="빨간비니에몽" width="200" />
+        <img src="/img/emong2.png" alt="노란 비니 쓴 에몽" title="노란비니에몽" width="200" />
+    </div>
+    <ul>
+        <form action="submit.php" method="post" name="name">
+            <label for="name">NAME :</label>
+            <input type="text" id="name" name="name" />
+            <input type="submit" value="submit" />
+        </form>
+    </ul>
+    <p>
+
+        <a href="/html/test10-1.html" target="_blank"><img src="https://placehold.co/200x50?text=test10.html"></a>
+    </p>
+
+</body>
+
+</html>

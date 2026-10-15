@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>hong's 신문 스타일 적용</title>
+    <style>
+        /*웹문서 초기값 : DOM(Document Object Modelling-웹문서)을 간격을 0px로 세팅하는 값이다*/
+        * {
+            margin: 0px;
+            padding: 0px;
+            box-sizing: border-box;
+        }
+
+        body {
+            /* border: 10px solid red; */
+            padding: 20px;
+        }
+
+        h2.news-title1 {
+            /*border: 1px solid black;*/
+            color: rgb(162, 104, 221);
+            width: 500px;
+            margin: 0px auto;
+            text-align: center;
+        }
+
+        div.news-colums1 {
+            column-count: 3;
+            column-gap: 40px;
+            font-family: sans-serif;
+            line-height: 2;
+            width: 800px;
+            border: 3px dotted rgb(162, 104, 221);
+            padding: 20px;
+            margin: 0px auto;
+            margin-top: 20px;
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+            min-height: 350px;
+            /* ★ 추가 ① 부드럽게 높이 변경 */
+            transition: min-height 0.5s ease,
+                background 0.5s ease;
+
+        }
+
+        div.news-colums1:hover {
+            background: rgb(218, 186, 250);
+            /* scale: 120%; */
+            cursor: pointer;
+            /* ★ 수정 ② scale: 120%; 삭제 */
+
+            /* ★ 추가 ③ 아래 방향으로 높이 증가 */
+            min-height: 450px;
+
+        }
+
+        div.news-colums2 {
+            column-count: 2;
+            column-gap: 40px;
+            font-family: sans-serif;
+            line-height: 1.6;
+            width: 800px;
+            border: 2px solid rgb(162, 104, 221);
+            padding: 20px;
+            margin: 0px auto;
+            margin-top: 20px;
+        }
+
+        .text-box {
+            text-align: center;
+        }
+
+        /* 링크 밑줄 제거 */
+        .news-colums1 a {
+            text-decoration: none;
+            color: inherit;
+        }
+    </style>
+</head>
+
+<body>
+    <h2 class="news-title1">Hong's 스타일 문단 구성</h2>
+    <div class="news-colums1">
+        <p><a href="https://www.google.com" target="_blank" rel="noopener noreferrer" title="구글 홈페이지로 이동"><img
+                    src="/img/emong1.png" alt="hong" width="150"></p>
+        <p class="text-box">좋아하는 것을 할 수 있는 일로,<br> 나만의 시선을<br> 새로운 경력으로 바꾸기 위해.</p>
+        <p><img src="/img/emong2.png" alt="hong" width="150"></a></p>
+    </div>
+
+    <div class="news-colums2">
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Natus, inventore, est voluptatibus dicta eius
+            voluptatum, nobis similique eum velit numquam suscipit officiis placeat quo eos repellendus a illum eligendi
+            id!</p>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Natus, inventore, est voluptatibus dicta eius
+            voluptatum, nobis similique eum velit numquam suscipit officiis placeat quo eos repellendus a illum eligendi
+            id!</p>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Natus, inventore, est voluptatibus dicta eius
+            voluptatum, nobis similique eum velit numquam suscipit officiis placeat quo eos repellendus a illum eligendi
+            id!</p>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Natus, inventore, est voluptatibus dicta eius
+            voluptatum, nobis similique eum velit numquam suscipit officiis placeat quo eos repellendus a illum eligendi
+            id!</p>
+
+    </div>
+
+</body>
+
+</html>
