@@ -51,16 +51,16 @@ nav a {
 }
 
 nav a:hover {
-    background: #ff9800;
+    background:  #8cbfef;
 }
 
 /*링크의 4가지 상태(순서 : L-V-H-A)*/
 .content a:link {
-    color: blue;
+    color: white;
 }/*처음 보여진 링크의 색*/
 
 .content a:visited {
-    color: purple;
+    color: white;
 }/*방문한 적이 있는 링크 색이 바뀌게 함*/
 
 .content a:hover {
@@ -90,4 +90,9 @@ section{
     min-height: 500px;
     padding: 30px;
     border-bottom: 1px solid #ccc;
+}
+
+/*선택된 섹션을 배경색을 적용하여 도드라지게 보이기*/
+section:target{
+    background: #8cbfef;
 }
