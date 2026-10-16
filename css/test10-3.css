@@ -61,7 +61,6 @@ nav a:hover {
 
 .content a:visited {
     color: purple;
-
 }/*방문한 적이 있는 링크 색이 바뀌게 함*/
 
 .content a:hover {
@@ -76,7 +75,7 @@ nav a:hover {
 a.btn{
     display: inline-block;
     padding: 10px 20px;
-    background-color: rgb(9, 97, 238);
+    background-color: #222;
     color: white;
     text-decoration: none;
     border-radius: 8px;
@@ -89,4 +88,6 @@ a.btn:hover{
 /*섹션공통*/
 section{
     min-height: 500px;
+    padding: 30px;
+    border-bottom: 1px solid #ccc;
 }
