@@ -38,10 +38,6 @@ nav ul {
     /*가로메뉴*/
 }
 
-
-nav li {}
-
-
 nav a {
     display: block;
     padding: 15px 20px;
@@ -56,15 +52,15 @@ nav a:hover {
 
 /*링크의 4가지 상태(순서 : L-V-H-A)*/
 .content a:link {
-    color: white;
+    color: white(103, 168, 222);
 }/*처음 보여진 링크의 색*/
 
 .content a:visited {
-    color: white;
+    color: white(114, 6, 114);
 }/*방문한 적이 있는 링크 색이 바뀌게 함*/
 
 .content a:hover {
-    color: red;
+    color: rgb(230, 196, 5);
     text-decoration: underline wavy;
 }/*마우스 올렸을 때 링크 색이 바뀌게 함*/
 
