@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Display_실습3_inlineblock</title>
+    <style>
+        /* 웹페이지 초기화 */
+        * {
+            margin: 0px;
+            padding: 0px;
+            box-sizing: border-box;
+        }
+
+        div.inline-block-box {
+            background-color: black;
+            color: white;
+            padding: 10px;
+            margin: 5px;
+            width: 300px;
+            height: 80px;
+            text-align: center;
+            line-height: 80px;
+            /* display:"inline-block" 설정 너비와 높이를 가질 수 있음*/
+            display: inline-block;
+            /* display:"block" 설정 결과 확인*/
+            /* display 적용 반복 연습하기!!  */
+        }
+    </style>
+</head>
+
+<body>
+    <h2>inline-block 요소(태그) 확인</h2>
+    <div class="inline-block-box">박스1</div>
+    <div class="inline-block-box">박스2</div>
+    <div class="inline-block-box">박스3</div>
+</body>
+
+</html>
