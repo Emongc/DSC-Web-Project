@@ -7,9 +7,17 @@
     <title>Box_model_실습2</title>
     <style>
         * {
-            margin: 0px;
+            margin: 0;
             padding: 0px;
             box-sizing: border-box;
+        }
+
+        body {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+            min-height: 100vh;
         }
 
         div.box2 {
@@ -26,7 +34,7 @@
 
         div.box2:hover {
             background-color: #f43987;
-            color: rgb(10, 206, 220);
+            color: rgb(222, 250, 144);
             box-sizing: content-box;
         }
 
